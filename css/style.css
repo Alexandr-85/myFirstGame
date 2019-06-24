@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+button{
+    min-width: 100px;
+    height: 40px;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px 10px;
+    border: 1px solid cadetblue;
+    background: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+button:focus{
+    outline: none;
+    box-shadow: 2px 3px 1px 1px cadetblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+body{
+    margin: auto;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+div[data-id]{
+    cursor: pointer;
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.win{
+    background: deepskyblue;
+    color: #fff;
+}
+
+.standoff{
+    background: green;
+}
